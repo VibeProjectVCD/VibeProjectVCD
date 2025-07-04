@@ -14,7 +14,7 @@ using System.Xml.Linq;
 // i like how people think dragging ware-x's api into a .net disassembler makes them think they are a reverse engineer 😱
 // open source commented
 
-namespace NyxAPI
+namespace WareXAPI
 {
     internal class Pipe
     {
@@ -66,7 +66,7 @@ namespace NyxAPI
             }
             catch (Exception ex)
             {
-                Nyx msgbox = new Nyx();
+                WareX msgbox = new WareX();
                 msgbox.Message(3, "Exception: " + ex.Message.ToString());
                 Environment.Exit(-1);
             }
